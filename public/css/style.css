@@ -6,6 +6,7 @@
   box-sizing: border-box;
 
 }
+
 :root {
   /*Colors*/
   --main-yellow: #EAC926;
@@ -191,8 +192,9 @@ main {
 
 }
 
-.product:hover{
-  box-shadow: 5px 15px 15px 15px rgb(100, 100, 100); ;
+.product:hover {
+  box-shadow: 5px 15px 15px 15px rgb(100, 100, 100);
+  ;
 }
 
 
@@ -226,7 +228,7 @@ main {
   color: #39b54a;
 }
 
-.product__info i:hover{
+.product__info i:hover {
   transform: rotateZ(270deg)
 }
 
@@ -275,7 +277,7 @@ main {
   width: 100%;
 }
 
-.footer-item>i:hover{
+.footer-item>i:hover {
   color: var(--main-blue);
 }
 
@@ -359,6 +361,7 @@ main {
   padding: 10px;
   text-align: left;
 }
+
 /*REGISTER END*/
 
 
@@ -397,7 +400,7 @@ main {
 
 }
 
-.login>button:hover{
+.login>button:hover {
   background-color: #0022AA;
 }
 
@@ -431,11 +434,10 @@ main {
   width: 40%;
   margin: auto;
   padding: 0px 0px 50px 0px
-
 }
 
 
-.submit__button{
+.submit__button {
   padding: 10px;
   background-color: var(--main-light-blue);
   color: var(--main-light-grey);
@@ -445,7 +447,7 @@ main {
 
 
 
-.reset__button{
+.reset__button {
   padding: 10px;
   background-color: var(--main-light-blue);
   color: var(--main-light-grey);
@@ -488,7 +490,7 @@ main {
 
   }
 
-  
+
   .top-header__img {
     width: 33%;
   }
@@ -569,49 +571,52 @@ main {
 
 
   .footer-item:nth-child(2)::before,
-    .footer-item:nth-child(2)::after{
-        background-color: var(--main-light-gray);
-        content: "";
-        display: block;
-        height: 100px;
-        margin-top: -32.5px;
-        position: absolute;
-        top: 50%;
-        width: 1px;
-    }
-    .footer-item:nth-child(2)::before{
-        left: 0;
-    }
-    .footer-item:nth-child(2)::after {
-        right: 0;
-    }
+  .footer-item:nth-child(2)::after {
+    background-color: var(--main-light-gray);
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: -32.5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+  }
 
-    .footer-item {
-        position: relative;
-        width: 33%;
-      }
+  .footer-item:nth-child(2)::before {
+    left: 0;
+  }
 
-    .footer-item h2{
-        margin-bottom: 30px;    
-    }
-    .footer-item p{
-        font-size: 14px;   
-    }
+  .footer-item:nth-child(2)::after {
+    right: 0;
+  }
 
-   
+  .footer-item {
+    position: relative;
+    width: 33%;
+  }
+
+  .footer-item h2 {
+    margin-bottom: 30px;
+  }
+
+  .footer-item p {
+    font-size: 14px;
+  }
+
+
 }
 
 
 
 @media (min-width: 1200px) {
-  
-  .product__info:hover>h3{
+
+  .product__info:hover>h3 {
     display: block;
   }
 
-  
 
-  
+
+
 
 
 
