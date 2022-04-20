@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d85b3fcf3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- INICIO DEL HEADER-->
+
+
+    <header>
+
+        <section class="top-header">
+
+            <div class="top-header__img">
+                <a href="/">
+                    <img src="img\logo-mercado-liebre.svg" alt="Logo Mercadolibre">
+                </a>
+            </div>
+
+
+            <form class="search-bar" action="#">
+                <input type="text" placeholder="Buscar productos, marcas">
+                <button type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <p class="main-header-text"><i class="fa-solid fa-hand-holding-dollar"></i>
+                Compra en cuotas y sin tarjeta de crédito</p>
+
+        </section>
+
+
+
+        <section class="nav-bar">
+
+            <nav>
+                <ul class="site">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+
+
+                <ul class="login">
+                    <li><a href="#">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+                    <li><a href="/register">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+
+            </nav>
+
+            <div class="hamburguer-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+
+
+
+        </section>
+    </header>
+
+
+    <Main>
+
+        <section class="register-container">
+
+<form method="get" action="/">
+
+    <article class="register-container__user">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+            </article>
+
+
+            
+            <article class="register-container__user">
+                <input type="text" id="nombreUsaurio" name="nombreUsaurio" placeholder="Nombre de Usuario" required> 
+            </article>
+
+
+            <article class="register-container__user">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </article>
+
+            
+            <div class="titles">
+                <h2>Fecha de nacimiento</h2>
+            </div>
+            
+
+            <article class="register-container__user">
+                <input type="date" id="fecha" name="fecha" required>
+            </article>
+
+
+            <article class="register-container__user">
+                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" required>
+            </article>
+
+
+            <div class="titles">
+                <h2>Perfil de usuario</h2>
+            </div>
+
+
+
+            <div class="radio-container">
+
+                <article class="radio">
+                    <input type="radio" name="perfil" value="comprador">
+                    <label for="comprador">Comprador</label>
+
+                    <input type="radio" name="perfil" value="vendedor">
+                    <label for="comprador">Vendedor</label>
+                </article>
+
+            </div>
+
+
+
+            <div class="titles">
+                <h2>Intereres</h2>
+            </div>
+
+            <article class="checkbox-container">
+
+                <section class="checkbox">
+                    <input type="checkbox" name="electro" value="electro">
+                    <label for="electro">Electro</label>
+                </section>
+
+
+                <section class="checkbox">
+                    <input type="checkbox" name="moda" value="moda">
+                    <label for="moda">Moda</label>
+                </section>
+
+
+                <section class="checkbox">
+                    <input type="checkbox" name="hogar" value="hogar">
+                    <label for="hogar">Hogar</label>
+                </section>
+
+
+                <section class="checkbox">
+                    <input type="checkbox" name="juguereria" value="juguereria">
+                    <label for="electro">juguereria</label>
+                </section>
+
+
+                <section class="checkbox">
+                    <input type="checkbox" name="vidasana" value="visasana">
+                    <label for="electro">Vida Sana</label>
+                </section>
+
+            </article>
+
+
+            <article class="picture-input">
+                <label>Selecionar una foto de perfil:</label>
+                <input type="file" name="profile" accept=".jpg" multiple>
+            </article>
+
+            <article class="password">
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+            </article>
+
+            <article class="password-confirm">
+                <input type="password" id="password" name="password" placeholder="Confirmar Contraseña">
+            </article>
+
+
+
+
+
+
+
+
+        </section>
+
+
+        <section class="button">
+
+            <article class="submit">
+                
+                    <input type="submit" value="Enviar" class="submit__button" />
+            </article>
+
+            <article class="reset-button">
+                <name="reset" method="post" action="/register">
+                    <input type="reset" value="Borrar" class="reset__button">
+            </article>
+
+
+        </section>
+
+
+    </form>
+
+    </Main>
+
+</body>
+
+</html>
